@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+*{margin: 0; 
+    top: 0;
+box-sizing: border-box;
+}
+
+.container{
+    border: 2px solid #000;
+    background-color: #AAC8A7;
+    display: flex;
+    display: inline-flex;
+    /* flex-direction: row; /* 기본값 : 안적어도 됨*/
+    /* flex-direction: column; 
+    flex-direction: row-reverse; */ /* 거꾸로 기본값 */
+    /* flex-direction: column-reverse; */
+
+    /* 줄넘김처리 */
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
+
+    /* 메인축 방향과, 줄넘김 축약형 */
+    flex-flow: row wrap;
+    flex-flow: row nowrap;
+
+}
+
+.container .item{
+    border: 2px solid #000;
+    background-color: #C9DBB2;
+    width: 40%;
+}

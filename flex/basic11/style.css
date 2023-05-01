@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+*{margin: 0; 
+    top: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    border: 2px solid #000;
+    background-color: #AAC8A7;
+    display: flex;
+
+}
+
+.container .item{
+    border: 2px solid #000;
+    background-color: #C9DBB2;
+}
+
+.container .item:nth-child(1){order: 3}
+.container .item:nth-child(2){order: 1}
+.container .item:nth-child(3){order: 2}
